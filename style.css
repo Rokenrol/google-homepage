@@ -1,15 +1,18 @@
-body {
-    margin: 0;
-    padding: 0;
+.container {
+    background: blueviolet;
 }
 
-.container {
-    display: grid;
-    height: 100vh;
-    grid-template-rows: 0.5fr 8fr 2fr;
-    grid-template-areas:
-    "nav"
-    "main"
-    "footer"
-    ;
+.navbar {
+    height: 100px;
+    background: rgb(202, 38, 139);
+}
+
+.main {
+    background: rgb(176, 166, 185);
+}
+
+a {
+    height: 30px;
+    width: 50px;
+    background: chocolate;
 }
