@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 0.5fr 8fr 2fr;
+    grid-template-areas:
+    "nav"
+    "main"
+    "footer"
+    ;
+}

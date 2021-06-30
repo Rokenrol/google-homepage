@@ -1,0 +1,1 @@
+- The goal is to make a google homepage, learn how to structure basic html, position elements and do some basic css styling
