@@ -1,18 +1,55 @@
 .container {
-    background: blueviolet;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 8fr 3fr;
+    grid-template-areas:
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
 }
 
 .navbar {
-    height: 100px;
-    background: rgb(202, 38, 139);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-area: nav;
+    background: rgb(190, 108, 159);
 }
 
 .main {
-    background: rgb(176, 166, 185);
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+    background: #ffffff;
 }
 
-a {
-    height: 30px;
-    width: 50px;
-    background: chocolate;
+.links1 {
+    background: rgb(177, 108, 108);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.links2 {
+    background: rgb(202, 219, 139);
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.search {
+    height: 10px;
+
+}
+
+input {
+    width: 19.5em;
+}
+
+.footer {
+    grid-area: footer;
+    background: rgb(195, 241, 173);
 }
